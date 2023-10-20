@@ -1,5 +1,9 @@
-import Image from "next/image";
-
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("@sections/Hero"));
 export default function Home() {
-    return <main className=""></main>;
+    return (
+        <main>
+            <Hero />
+        </main>
+    );
 }

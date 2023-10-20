@@ -4,12 +4,14 @@ module.exports = {
     content: [
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
         "./components/**/*.{js,ts,jsx,tsx,mdx}",
+        "./sections/**/*.{js,ts,jsx,tsx,mdx}",
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
         extend: {
             colors: {
                 "light-bg": "#fff",
+                "light-secondary-bg": "#cde9ff",
                 "primary-text": "#000",
                 "secondary-color": "#42a5f5",
                 "secondary-text": "#777",

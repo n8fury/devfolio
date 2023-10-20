@@ -19,7 +19,7 @@ const Navbar = () => {
                 activeNavClass="is-active"
                 scrollDuration="1500"
             >
-                <nav className="hidden md:flex justify-between items-center mt-[5rem]">
+                <nav className="hidden md:flex justify-between items-center px-10 py-5 bg-light-secondary-bg dark:bg-dark-secondary mt-[5rem] shadow-md rounded-md text-primary-text dark:text-dark-secondary-text">
                     <div className="logo">
                         <Link
                             className="text-[1.5rem] font-[600] leading-7"
@@ -28,12 +28,12 @@ const Navbar = () => {
                             N8Fury
                         </Link>
                     </div>
-                    <div className="nav-item flex flex-row items-center gap-20 text-[1.1rem] text-[400] text-primary-text dark:text-dark-secondary-text">
+                    <div className="nav-item flex flex-row items-center gap-10 text-[1.1rem] text-[400] ">
                         <Link href="#home">Home</Link>
                         <Link href="#about">About</Link>
                         <Link href="#projects">Projects</Link>
                         <Link href="#contacts">Contacts</Link>
-                        <div className="text-[1.8rem]  text-secondary-color ">
+                        <div className="text-[1.5rem]  text-secondary-color ">
                             {theme === "light" ? (
                                 <FiSun
                                     className="cursor-pointer"
