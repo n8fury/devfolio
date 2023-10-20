@@ -17,13 +17,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body
-                className={`${mono.className} min-w-full min-h-screen bg-light-bg dark:bg-dark-bg text-primary-text dark:text-dark-text`}
-            >
+            <body className={mono.className}>
                 <ThemeProviders>
-                    <div className="container">
-                        <Navbar />
-                        {children}
+                    <div className="min-w-full min-h-screen bg-light-bg dark:bg-dark-bg text-primary-text dark:text-dark-text">
+                        <div className="container">
+                            <Navbar />
+                            {children}
+                        </div>
                     </div>
                 </ThemeProviders>
             </body>

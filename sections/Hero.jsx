@@ -10,24 +10,24 @@ import { FiGithub } from "react-icons/fi";
 import { TbBrandCss3, TbSql } from "react-icons/tb";
 import { RiJavascriptLine } from "react-icons/ri";
 
-
 const Hero = () => {
     return (
-        <section className="mt-[5rem]">
+        <section className="my-[5rem]" id="home">
             <div className="w-full grid grid-cols-1 md:grid-cols-12 gap-5 items-center ">
                 <div className="col-span-1 md:col-span-8">
                     <div className="flex flex-col gap-5 items-start">
-                        <h1 className="text-[1.8rem]">
+                        <h1 className="text-[1.8rem] font-[600]">
                             <span className="bg-light-secondary-bg dark:bg-dark-secondary px-2 py-1">
                                 MERN - Stack
                             </span>{" "}
                             <br /> Developer
                         </h1>
-                        <p className="text-[1.3rem]">
-                            Hi,I'm Mamdud Hasan, a detail-oriented backend
-                            software engineer dedicated to crafting robust and
-                            efficient systems that power seamless user
-                            experiences.
+                        <p className="text-[1.2rem] font-[400]">
+                            Hi,I'm
+                            <span className="font-[600]"> Mamdud Hasan</span>, a
+                            detail-oriented backend software engineer dedicated
+                            to crafting robust and efficient systems that power
+                            seamless user experiences.
                         </p>
                         <div className="flex flex-row  items-center gap-5">
                             <Link
@@ -57,7 +57,7 @@ const Hero = () => {
                     />
                 </div>
             </div>
-            <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2  md:gap-5 my-[5rem]">
+            <div className="w-full flex flex-col md:flex-row justify-center items-center gap-2  md:gap-5">
                 <h3 className="text-[2rem] font-[600]">Tech - Stack</h3>
                 <div>
                     <div className="hidden md:inline-block border-[1.5px] border-primary-text dark:border-dark-text h-10" />

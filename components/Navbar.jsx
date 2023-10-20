@@ -14,41 +14,45 @@ const Navbar = () => {
             {/* Mobile Nav */}
 
             {/* Desktop nav */}
-            <ScrollspyNav
-                scrollTargetIds={["home", "about", "projects", "contacts"]}
-                activeNavClass="is-active"
-                scrollDuration="1500"
-            >
-                <nav className="hidden md:flex justify-between items-center px-10 py-5 bg-light-secondary-bg dark:bg-dark-secondary mt-[5rem] shadow-md rounded-md text-primary-text dark:text-dark-secondary-text">
-                    <div className="logo">
-                        <Link
-                            className="text-[1.5rem] font-[600] leading-7"
-                            href="#home"
-                        >
-                            N8Fury
-                        </Link>
-                    </div>
-                    <div className="nav-item flex flex-row items-center gap-10 text-[1.1rem] text-[400] ">
-                        <Link href="#home">Home</Link>
-                        <Link href="#about">About</Link>
-                        <Link href="#projects">Projects</Link>
-                        <Link href="#contacts">Contacts</Link>
-                        <div className="text-[1.5rem]  text-secondary-color ">
-                            {theme === "light" ? (
-                                <FiSun
-                                    className="cursor-pointer"
-                                    onClick={() => setTheme("dark")}
-                                />
-                            ) : (
-                                <MdOutlineNightlight
-                                    className="cursor-pointer rotate-[-30deg]"
-                                    onClick={() => setTheme("light")}
-                                />
-                            )}
+
+            <nav className="hidden md:inline-block sticky top-5 w-full px-10 py-5 bg-light-secondary-bg dark:bg-dark-secondary shadow-md rounded-lg text-primary-text dark:text-dark-secondary-text">
+                <ScrollspyNav
+                    scrollTargetIds={["home", "about", "projects", "contacts"]}
+                    activeNavClass="is-active"
+                    scrollDuration="500"
+                >
+                    <div className="flex justify-between items-center">
+                        <div className="logo">
+                            <Link
+                                className="text-[1.5rem] font-[600] leading-7"
+                                href="#home"
+                            >
+                                N8Fury
+                            </Link>
+                        </div>
+                        <div className="nav-item flex flex-row items-center gap-10 text-[1.1rem] text-[400] ">
+                            <Link href="#home">Home</Link>
+                            <Link href="#about">About</Link>
+                            <Link href="#projects">Projects</Link>
+                            <Link href="#contacts">Contacts</Link>
+                            <div className="text-[1.5rem]  text-secondary-color ">
+                                {theme === "light" ? (
+                                    <FiSun
+                                        className="cursor-pointer"
+                                        onClick={() => setTheme("dark")}
+                                    />
+                                ) : (
+                                    <MdOutlineNightlight
+                                        className="cursor-pointer rotate-[-30deg]"
+                                        onClick={() => setTheme("light")}
+                                    />
+                                )}
+                            </div>
                         </div>
                     </div>
-                </nav>
-            </ScrollspyNav>
+                </ScrollspyNav>
+            </nav>
+
             {/* Desktop Nav */}
         </>
     );

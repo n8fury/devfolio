@@ -4,6 +4,6 @@
 
 @layer components {
     .container {
-        @apply w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto;
+        @apply w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto relative;
     }
 }
