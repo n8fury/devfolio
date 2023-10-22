@@ -11,6 +11,23 @@ const About = () => {
         "SQL",
         "Ruby",
     ];
+    const frameWorks = [
+        "Ember & Glimmer",
+        "React",
+        "Jekyll",
+        "Node",
+        "D3",
+        "Wordpress",
+        "Timber",
+    ];
+    const tools = [
+        "Bash",
+        "Git & GitHub",
+        "Glup & Grunt",
+        "Chrome Dev Tools",
+        "Postman",
+        "MongoDB",
+    ];
     return (
         <section className="my-[5rem]" id="about">
             <div className="mb-[5rem]">
@@ -50,11 +67,52 @@ const About = () => {
                 </div>
                 <div className="flex flex-row flex-wrap justify-between items-start">
                     <div>
-                        <h3>Languages</h3>
+                        <h3 className="text-[1.3rem] font-[600] uppercase">
+                            Languages
+                        </h3>
                         {
-                            <ul className="list-disc list-inside">
+                            <ul className="">
                                 {languages.map((language) => (
-                                    <li key={language}>{language}</li>
+                                    <li
+                                        key={language}
+                                        className="text-[1.25rem] font-[400]"
+                                    >
+                                        {language}
+                                    </li>
+                                ))}
+                            </ul>
+                        }
+                    </div>
+                    <div>
+                        <h3 className="text-[1.3rem] font-[600] uppercase">
+                            FrameWorks
+                        </h3>
+                        {
+                            <ul className="">
+                                {frameWorks.map((framework) => (
+                                    <li
+                                        key={framework}
+                                        className="text-[1.25rem] font-[400]"
+                                    >
+                                        {framework}
+                                    </li>
+                                ))}
+                            </ul>
+                        }
+                    </div>
+                    <div>
+                        <h3 className="text-[1.3rem] font-[600] uppercase ">
+                            Tools
+                        </h3>
+                        {
+                            <ul className="">
+                                {tools.map((tool) => (
+                                    <li
+                                        key={tool}
+                                        className="text-[1.25rem] font-[400]"
+                                    >
+                                        {tool}
+                                    </li>
                                 ))}
                             </ul>
                         }

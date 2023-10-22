@@ -15,7 +15,7 @@ const Navbar = () => {
 
             {/* Desktop nav */}
 
-            <nav className="hidden md:inline-block sticky top-5 w-full px-10 py-5 bg-light-secondary-bg dark:bg-dark-secondary shadow-md rounded-lg text-primary-text dark:text-dark-secondary-text">
+            <nav className="hidden md:inline-block sticky top-5 w-full px-10 py-5 bg-light-secondary-bg dark:bg-dark-secondary shadow-md rounded-lg text-primary-text dark:text-dark-secondary-text z-[999]">
                 <ScrollspyNav
                     scrollTargetIds={["home", "about", "projects", "contacts"]}
                     activeNavClass="is-active"

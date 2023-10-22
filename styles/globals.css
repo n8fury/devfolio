@@ -7,3 +7,14 @@
         @apply w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto relative;
     }
 }
+
+/* Custom styles of Library  */
+.swiper-wrapper {
+    @apply  pb-[3rem] !important;
+}
+.swiper-pagination-bullet {
+    @apply dark:bg-light-bg mb-5 !important;
+}
+.swiper-pagination-bullet-active-main {
+    @apply bg-secondary-color dark:bg-secondary-color  !important;
+}
