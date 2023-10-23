@@ -50,10 +50,11 @@ const Hero = () => {
                 </div>
                 <div className="col-span-1 md:col-span-4 flex justify-center ">
                     <Image
-                        src="/images/profile-picture.png"
+                        src="/images/personal/profile-picture.png"
+                        alt="Mamdud Hasan Zoy"
                         width={300}
                         height={450}
-                        className="bg-light-secondary-bg dark:bg-dark-secondary rounded-[2rem]"
+                        className="bg-light-secondary-bg w-auto h-auto  dark:bg-dark-secondary rounded-[2rem]"
                     />
                 </div>
             </div>

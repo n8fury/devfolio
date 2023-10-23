@@ -20,6 +20,7 @@ module.exports = {
                 "dark-secondary-text": "#96D0FF",
                 "dark-secondary": "#2f5b80",
             },
+            
         },
     },
     plugins: [],
