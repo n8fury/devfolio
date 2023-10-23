@@ -1,3 +1,6 @@
+/* Import fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,15 +9,196 @@
     .container {
         @apply w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] mx-auto relative;
     }
+    input,
+    textarea {
+        @apply outline-none focus:outline-none w-full border-b-[1.5px] bg-transparent border-primary-text dark:border-dark-text flex justify-center py-2 text-[1.25rem] font-[500] text-primary-text dark:text-dark-text placeholder:text-[1.25rem] placeholder:font-[500] placeholder:text-primary-text placeholder:dark:text-dark-text;
+    }
 }
 
 /* Custom styles of Library  */
 .swiper-wrapper {
-    @apply  pb-[3rem] !important;
+    @apply pb-[3rem] !important;
 }
 .swiper-pagination-bullet {
     @apply dark:bg-light-bg mb-5 !important;
 }
 .swiper-pagination-bullet-active-main {
     @apply bg-secondary-color dark:bg-secondary-color  !important;
+}
+
+/* loading spinner */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(90deg);
+    }
+    35% {
+        transform: rotate(90deg);
+    }
+    45% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    85% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    10% {
+        -webkit-transform: rotate(0deg);
+    }
+    20% {
+        -webkit-transform: rotate(90deg);
+    }
+    35% {
+        -webkit-transform: rotate(90deg);
+    }
+    45% {
+        -webkit-transform: rotate(180deg);
+    }
+    60% {
+        -webkit-transform: rotate(180deg);
+    }
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+    85% {
+        -webkit-transform: rotate(270deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes bounce {
+    0% {
+        transform: scaleX(1);
+    }
+    10% {
+        transform: scaleX(1);
+    }
+    20% {
+        transform: scaleX(0.8);
+    }
+    35% {
+        transform: scaleX(0.8);
+    }
+    45% {
+        transform: scaleX(1);
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    75% {
+        transform: scaleX(0.8);
+    }
+    85% {
+        transform: scaleX(0.8);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: scaleX(1);
+    }
+    10% {
+        -webkit-transform: scaleX(1);
+    }
+    20% {
+        -webkit-transform: scaleX(0.8);
+    }
+    35% {
+        -webkit-transform: scaleX(0.8);
+    }
+    45% {
+        -webkit-transform: scaleX(1);
+    }
+    60% {
+        -webkit-transform: scaleX(1);
+    }
+    75% {
+        -webkit-transform: scaleX(0.8);
+    }
+    85% {
+        -webkit-transform: scaleX(0.8);
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+    }
+}
+.spinner {
+    box-sizing: content-box;
+    height: 40px;
+    margin: 0 auto 10px auto;
+    position: relative;
+    width: 70px;
+}
+
+.spinner .spin {
+    -webkit-animation: spin 2.25s linear infinite;
+    animation: spin 2.25s linear infinite;
+    height: 14px;
+    left: 28px;
+    position: absolute;
+    top: 13px;
+    width: 14px;
+}
+.spinner .spin:before {
+    border: 3px solid #000;
+    box-sizing: content-box;
+    content: "";
+    height: 14px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 14px;
+}
+.spinner .bounce {
+    -webkit-animation: bounce 2.25s linear infinite;
+    animation: bounce 2.25s linear infinite;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+.spinner .bounce:after,
+.spinner .bounce:before {
+    box-sizing: content-box;
+    content: "";
+    height: 10px;
+    position: absolute;
+    top: 13px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 10px;
+}
+.spinner .bounce:before {
+    border-bottom: 3px solid #000;
+    border-left: 3px solid #000;
+    left: 0;
+}
+.spinner .bounce:after {
+    border-right: 3px solid #000;
+    border-top: 3px solid #000;
+    right: 0;
 }
