@@ -9,6 +9,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                mono: ["JetBrains Mono", "monospace"],
+            },
             colors: {
                 "light-bg": "#fff",
                 "light-secondary-bg": "#cde9ff",
@@ -20,7 +23,6 @@ module.exports = {
                 "dark-secondary-text": "#96D0FF",
                 "dark-secondary": "#2f5b80",
             },
-            
         },
     },
     plugins: [],
