@@ -29,7 +29,7 @@ const Contact = () => {
                     <div>
                         <form
                             className="flex flex-col gap-10"
-                            action="mailto:someone@example.com"
+                            action="mhjoy547@gmail.com"
                             method="post"
                             enctype="text/plain"
                         >
@@ -39,12 +39,14 @@ const Contact = () => {
                                     name="name"
                                     id="name"
                                     placeholder="Your Name"
+                                    required
                                 />
                                 <input
                                     type="email"
                                     name="email"
                                     id="email"
                                     placeholder="Your Email Address"
+                                    required
                                 />
                             </div>
                             <textarea
@@ -53,6 +55,7 @@ const Contact = () => {
                                 maxlength="1200"
                                 placeholder="Details about your project"
                                 className="h-[5rem]"
+                                required
                             />
                             <input
                                 type="submit"
