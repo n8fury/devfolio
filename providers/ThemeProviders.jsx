@@ -10,9 +10,9 @@ const ThemeProviders = ({ children }) => {
         <>
             {loading ? (
                 <div className="min-w-full min-h-screen flex flex-col justify-center items-center">
-                    <div class="spinner">
-                        <div class="spin" />
-                        <div class="bounce" />
+                    <div className="spinner">
+                        <div className="spin" />
+                        <div className="bounce" />
                     </div>
                     <p className="text-[1.5rem] uppercase font-[600]">
                         Loading
