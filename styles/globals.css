@@ -20,7 +20,7 @@
     @apply pb-[3rem] !important;
 }
 .swiper-pagination-bullet {
-    @apply dark:bg-light-bg mb-5 !important;
+    @apply dark:bg-light-bg mb-1 !important;
 }
 .swiper-pagination-bullet-active-main {
     @apply bg-secondary-color dark:bg-secondary-color  !important;
